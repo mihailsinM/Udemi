@@ -33,3 +33,33 @@ switch (num) {
         console.log("Not to day!");
         break;
 }
+
+// const hamburger = true;
+// const fries = true;
+
+// if (hamburger && fries) {
+//     console.log("I am full!");
+// }
+// console.log((hamburger && fries));
+
+const hamburger = 3;
+const fries = 1;
+const colla = 0;
+
+console.log(hamburger === 3 && fries && colla);
+console.log(hamburger === 3 || fries && colla);
+
+if (hamburger === 3 && fries && colla) {
+    console.log("Everyone am full!");
+} else {
+    console.log("We're leaving");
+}
+
+console.log(1 && 0);
+console.log(1 && 5);
+console.log(null && 5);
+console.log(0 && "zzzz");
+
+
+let jonReport, alexReport, mashaReport, mariyaReport = "Done!";
+console.log(jonReport || alexReport || mashaReport || mariyaReport);
