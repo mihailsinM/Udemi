@@ -8,13 +8,28 @@ const personalMovieDb = {
     privat: false
 };
 
-for (let i = 0; i < 2; i++) {
+// for (let i = 0; i < 2; i++) {
+//     const a = prompt("Last film have you watched?", ""),
+//         b = prompt("What rating would you give?", "");
+
+//     if (a != null && b != null && a != "" && b != "" && a.length < 50) {
+//         personalMovieDb.movies[a] = b;
+//         console.log("Done!");
+//     } else {
+//         console.log("Error!");
+//         i--;
+//     }
+// }
+
+let i = 0;
+while (i != 2) {
     const a = prompt("Last film have you watched?", ""),
         b = prompt("What rating would you give?", "");
-
+    i++;
     if (a != null && b != null && a != "" && b != "" && a.length < 50) {
         personalMovieDb.movies[a] = b;
         console.log("Done!");
+
     } else {
         console.log("Error!");
         i--;
@@ -27,7 +42,7 @@ if (personalMovieDb.count < 10) {
     console.log("You are a good viewer!");
 } else if (personalMovieDb.count >= 30) {
     console.log("You are kinnaman!");
-}else{
+} else {
     console.log("Something went wrong!");
 }
 
